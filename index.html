@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="fitTables : jQuery fitTables to create responsive tables by Gary Hepting" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>fitTables</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/ghepting/fitTables">View on GitHub</a>
+
+          <h1 id="project_title">fitTables</h1>
+          <h2 id="project_tagline">jQuery fitTables to create responsive tables by Gary Hepting</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/ghepting/fitTables/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/ghepting/fitTables/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>fitTables</h1>
+
+<p>jQuery fitTables</p>
+
+<p>A jQuery plugin to create responsive tables by Gary Hepting</p>
+
+<p>Watch, fork and pull from: [<a href="https://github.com/ghepting/fitTables">https://github.com/ghepting/fitTables</a>]
+Demo available at: [<a href="http://garyhepting.com/fitTables-js.php">http://garyhepting.com/fitTables-js.php</a>]</p>
+
+<h2>Dependencies</h2>
+
+<p><strong><a href="http://jquery.com/">jQuery</a></strong></p>
+
+<h2>Usage</h2>
+
+<p>In the &lt;head&gt; of your document, link jQuery, fitTables.js and fitTables.css (optional)</p>
+
+<div class="highlight">
+<pre><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"./fitTables.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">type=</span><span class="s">"text/css"</span> <span class="na">href=</span><span class="s">"./fitTables.css"</span> <span class="nt">/&gt;</span>
+</pre>
+</div>
+
+
+<p>Configure which tables should be initialized with fitTables. You can specify by classname, tag or single table by a unique element id.</p>
+
+<div class="highlight">
+<pre><span class="c1">// basic usage with no customizations</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'table'</span><span class="p">).</span><span class="nx">fitTable</span><span class="p">();</span>
+
+<span class="c1">// custom options configured for a specific table</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'#example1'</span><span class="p">).</span><span class="nx">fitTable</span><span class="p">({</span>
+    <span class="nx">max</span><span class="o">:</span> <span class="mi">45</span><span class="p">,</span>
+    <span class="nx">min</span><span class="o">:</span> <span class="mi">10</span><span class="p">,</span>
+    <span class="nx">compressor</span><span class="o">:</span> <span class="mi">7</span><span class="p">,</span>
+    <span class="nx">padding</span><span class="o">:</span> <span class="mi">3</span><span class="p">,</span>
+    <span class="nx">height</span><span class="o">:</span> <span class="s1">'100%'</span><span class="p">,</span>
+    <span class="nx">adjust_parents</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nx">use_styles</span><span class="o">:</span> <span class="kc">true</span>
+<span class="p">});</span>
+</pre>
+</div>
+
+
+<h1>How to use</h1>
+
+<p>Options:</p>
+
+<p><code>max</code> — maximum font size in pixels</p>
+
+<p><code>min</code> — minimum font size in pixels</p>
+
+<p><code>compressor</code> — strength of text compressor (how aggressively to shrink the font)</p>
+
+<p><code>padding</code> — padding (whole integer value -- larger number for more padding)</p>
+
+<p><code>height</code> — 'auto' to leave heights alone, percentage to apply responsive heights -- '100%' will fit tables (and containers) to viewport height</p>
+
+<p><code>adjust_parents</code> — if height option specified, force parent elements height to be 100% of viewport</p>
+
+<p><code>use_styles</code> — apply styles from fitTables.css</p>
+
+<h2>Changelog</h2>
+
+<p><strong>Beta v0.1</strong></p>
+
+<ul>
+<li>Public beta release</li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">fitTables maintained by <a href="https://github.com/ghepting">ghepting</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-17121602-7");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+
+  </body>
+</html>
